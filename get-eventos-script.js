@@ -34,15 +34,15 @@ async function fetchEventos() {
                 return `${dia}/${mes}/${ano}`;
             };
 
-            imagem01.src = data[0].URLImagemEvento;
-            titulo01.innerText = data[0].TituloSiteEvento;
+            imagem01.src = data[1].URLImagemEvento;
+            titulo01.innerText = data[1].TituloSiteEvento;
             descricao01.innerText = data[0].DescricaoSiteEvento;
-            data01.innerText = formatarData(data[0].DataEvento);
+            data01.innerText = formatarData(data[1].DataEvento);
 
-            imagem02.src = data[1].URLImagemEvento;
-            titulo02.innerText = data[1].TituloSiteEvento;
-            descricao02.innerText = data[1].DescricaoSiteEvento;
-            data02.innerText = formatarData(data[1].DataEvento);
+            imagem02.src = data[0].URLImagemEvento;
+            titulo02.innerText = data[0].TituloSiteEvento;
+            descricao02.innerText = data[0].DescricaoSiteEvento;
+            data02.innerText = formatarData(data[0].DataEvento);
         } else {
             console.warn('URL da imagem não encontrada.');
         }
