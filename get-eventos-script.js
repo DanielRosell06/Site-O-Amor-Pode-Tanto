@@ -36,7 +36,7 @@ async function fetchEventos() {
 
             imagem01.src = data[1].URLImagemEvento;
             titulo01.innerText = data[1].TituloSiteEvento;
-            descricao01.innerText = data[0].DescricaoSiteEvento;
+            descricao01.innerText = data[1].DescricaoSiteEvento;
             data01.innerText = formatarData(data[1].DataEvento);
 
             imagem02.src = data[0].URLImagemEvento;
